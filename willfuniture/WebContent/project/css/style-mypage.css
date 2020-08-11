@@ -1,0 +1,125 @@
+/* [Master Stylesheet v-1.0.0] */
+/* :: :: 1.0 Import Fonts */
+
+@detailview {
+line-height: 15px;
+color: #666;
+font-family: "NanumBarunGothic", nbg, "³ª´®°íµñ", "Nanum Gothic", "µ¸¿ò", Dotum, sans-serif;
+font-size: 12px;
+margin: 0;
+width: 80%;
+background: #F7F7F7;
+padding: 25px 0 80px 0; }
+
+dv_top{
+line-height: 15px;
+color: #666;
+font-family: "NanumBarunGothic", nbg, "³ª´®°íµñ", "Nanum Gothic", "µ¸¿ò", Dotum, sans-serif;
+font-size: 12px;
+padding: 0;
+list-style: none;
+width: 1200px;
+background: url(/semi/project/img/renew0425/20200525_175300.png) repeat-y;
+border-top: 1px solid #E3E3E3;
+border-bottom: 1px solid #E3E3E3;
+margin: 0 auto;
+	
+}
+
+dv_top_navi {
+line-height: 50px;
+color: #666;
+font-family: "NanumBarunGothic", nbg, "³ª´®°íµñ", "Nanum Gothic", "µ¸¿ò", Dotum, sans-serif;
+font-size: 15px;
+padding: 0;
+list-style: none;
+width: 1200px;
+background: url(/semi/project/img/renew0425/20200525_175300.png) repeat-y;
+border-top: 1px solid #E3E3E3;
+border-bottom: 1px solid #E3E3E3;
+margin: 0 auto;}
+
+
+cart{
+	line-height: 15px;
+color: #666;
+font-family: "NanumBarunGothic", nbg, "³ª´®°íµñ", "Nanum Gothic", "µ¸¿ò", Dotum, sans-serif;
+font-size: 12px;
+list-style: none;
+padding: 0;
+width: 1100px;
+margin: 32px auto 50px auto;
+display: table;
+}
+
+
+cart_title {
+	font-family: "NanumBarunGothic", nbg, "³ª´®°íµñ", "Nanum Gothic", "µ¸¿ò", Dotum, sans-serif;
+margin: 0;
+padding: 0;
+list-style: none;
+text-align: center;
+font-size: 31px;
+color: #444;
+font-weight: bold;
+line-height: 33px;
+}
+
+cart_navi {
+line-height: 15px;
+color: #666;
+font-family: "NanumBarunGothic", nbg, "³ª´®°íµñ", "Nanum Gothic", "µ¸¿ò", Dotum, sans-serif;
+font-size: 12px;
+margin: 0;
+padding: 0;
+list-style: none;
+margin-top: 17px;
+}
+
+
+mptop_table {
+	line-height: 15px;
+color: #666;
+font-family: "NanumBarunGothic", nbg, "³ª´®°íµñ", "Nanum Gothic", "µ¸¿ò", Dotum, sans-serif;
+font-size: 12px;
+list-style: none;
+border-collapse: collapse;
+margin: 0;
+padding: 0;
+background: url(/images/renew0425/20160411_03.png) no-repeat;
+width: 1100px;
+height: 156px;}
+
+mpbody_table {
+line-height: 15px;
+color: #666;
+font-family: "NanumBarunGothic", nbg, "³ª´®°íµñ", "Nanum Gothic", "µ¸¿ò", Dotum, sans-serif;
+font-size: 12px;
+list-style: none;
+border-collapse: collapse;
+margin: 0;
+padding: 0;
+width: 1100px;
+margin-top: 60px;
+}
+
+p {
+font-family: "NanumBarunGothic", nbg, "³ª´®°íµñ", "Nanum Gothic", "µ¸¿ò", Dotum, sans-serif;
+list-style: none;
+text-align: center;
+line-height: 20px;
+padding: 0;
+margin: 0;
+font-size: 10px;
+color: #888;
+font-weight: normal;
+}
+
+
+
+ul{
+   list-style:none;
+   padding-left:0px
+   }
+
+

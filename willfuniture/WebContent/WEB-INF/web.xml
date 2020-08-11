@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>semi</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+   <!-- DBCPConn -->
+  
+<resource-ref>
+  <description>Oracle Database Source</description>
+  <res-ref-name>jdbc/myOracle</res-ref-name>
+  <res-type>javax.sql.DataSource</res-type>
+  <res-auth>Container</res-auth>
+</resource-ref>
+  
+  
+ <!-- 원아씨 서블렛 --> 
+  <servlet>
+  	<servlet-name>productServlet</servlet-name>
+  	<servlet-class>com.product.ProductServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>productServlet</servlet-name>
+  	<url-pattern>/product/*</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 나꺼 서블렛 --> 
+  <servlet>
+  	<servlet-name>adminServlet</servlet-name>
+  	<servlet-class>com.admin.Adservlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>adminServlet</servlet-name>
+  	<url-pattern>/master/*</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 로그인 및 회원가입서블렛 -->
+  <servlet>
+  <servlet-name>memberServlet</servlet-name>
+  <servlet-class>com.member.MemberServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>memberServlet</servlet-name>
+  <url-pattern>/member/*</url-pattern>
+  </servlet-mapping>
+  
+  
+   <!-- 구매정보서블렛 -->
+  <servlet>
+  <servlet-name>ordersServlet</servlet-name>
+  <servlet-class>com.orders.OrdersServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>ordersServlet</servlet-name>
+  <url-pattern>/orders/*</url-pattern>
+  </servlet-mapping>
+
+
+
+	<!-- CartServlet 게시판 -->
+	<servlet>
+		<servlet-name>cartServlet</servlet-name>
+		<servlet-class>com.cart.CartServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>cartServlet</servlet-name>
+		<url-pattern>/cart/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- FileServlet 게시판 -->
+
+	<servlet>
+		<servlet-name>filesServlet</servlet-name>
+		<servlet-class>com.files.FilesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>filesServlet</servlet-name>
+		<url-pattern>/files/*</url-pattern>
+	</servlet-mapping>
+  
+  
+ <!-- CategoryServlet 게시판 -->
+
+<servlet>
+<servlet-name>categoryServlet</servlet-name>
+<servlet-class>com.category.CategoryServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>categoryServlet</servlet-name>
+<url-pattern>/category/*</url-pattern>
+</servlet-mapping> 
+  
+  
+ <!-- page 서블릿 -->
+
+<servlet>
+<servlet-name>pageServlet</servlet-name>
+<servlet-class>com.page.PageServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>pageServlet</servlet-name>
+<url-pattern>/page/*</url-pattern>
+</servlet-mapping> 
+  
+  
+  
+<!-- CharSetEncodingFilter Filter, init 메소드 실행시 파라미터 전송해서 초기화한다. -->
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>com.filter.CharsetEncodingFilter</filter-class>
+		<init-param>
+			<param-name>charset</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+	</filter> 
+
+	<!-- 모든 주소(/*)에 Servlet Filter 적용 -->
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping> 
+
+	<servlet>
+		<servlet-name>qnaServlet</servlet-name>
+		<servlet-class>com.qna.QNAServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>qnaServlet</servlet-name>
+		<url-pattern>/sqna/*</url-pattern>
+	</servlet-mapping>
+	
+	
+	 <!-- page 서블릿 -->
+
+<servlet>
+<servlet-name>mainServlet</servlet-name>
+<servlet-class>com.main.mainservlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>mainServlet</servlet-name>
+<url-pattern>/itwill/*</url-pattern>
+</servlet-mapping> 
+  
+  
+  
+<servlet>
+    <servlet-name>reviewServlet</servlet-name>
+    <servlet-class>com.review.ReviewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>reviewServlet</servlet-name>
+    <url-pattern>/sreview/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>replyServlet</servlet-name>
+    <servlet-class>com.reply.ReplyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>replyServlet</servlet-name>
+    <url-pattern>/sreply/*</url-pattern>
+  </servlet-mapping>  
+  
+  
+  
+</web-app>
+
+
+
